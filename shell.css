@@ -1,0 +1,382 @@
+body{
+    padding: 0;
+    margin: 0;
+    /* background-color: aqua; */
+    font-family: sans-serif;
+}
+.big_container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: 
+    "navigation main";
+    background-color: aqua;
+}
+.navigation{
+    grid-area: navigation;
+    background-color:white;
+}
+.main{
+    height: 20vh;
+    grid-area: main;
+    background-color:aqua;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:
+    "main_1 main_1 main_1 main_1"
+    "main_2 main_2 main_2 main_4"
+    "main_3 main_3 main_3 main_4";
+    grid-template-rows: 1fr 2fr 3fr;
+}
+/* ---------------------------main1--------------------------- */
+.main_1{
+    background-color:aqua;
+    grid-area: main_1;
+}
+.main1_input{
+    display: flex;
+    align-items: center;
+    /* gap: 80px; */
+    justify-content: space-evenly;
+    padding: 5px 5px;
+}
+.main1_input input{
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+input[type="date"],
+input[type="time"]{
+    width: 130px;
+    padding:7px;
+}
+input[type="search"]{
+    width: 300px;
+    padding: 10px;
+}
+.main1_button{
+    background-color: white;
+    padding: 6px;
+    border-radius: 20px;
+}
+.main1_button button{
+    border: none;
+    padding: 4px;
+    border-radius: 20px;
+}
+.main1_input button{
+    border: none;
+    border-radius: 20px;
+    padding: 7px;
+}
+.main1_input button i{
+    font-size: 20px;
+}
+.main1_input img{
+    border-radius: 50%;
+}
+
+
+/* ----------------------------------main2------------------------------ */
+.main_2{
+    background-color: cyan;
+    grid-area: main_2;
+}
+.main2_head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+.main2_head button{
+    background:none;
+    color: blue;
+    border: none;
+}
+.main2_nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+.main2_nav button{
+    padding: 5px;
+    border-radius:20px;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+.main2_card{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    padding: 20px;
+}
+.group_card{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.image{
+    background-color: red;
+    position: relative;
+}
+.image i{
+    font-size: small;
+}
+.image button{
+    /* position: absolute; */
+    top: 0;
+    bottom: 0;
+}
+.info1 , .info3{
+    display: flex;
+    justify-content: space-between;
+}
+.info1{
+    margin-bottom: -10px;
+}
+.info{
+    margin: 0 10px;
+}
+.info h4{
+    margin-top: -10px;
+}
+.info3{
+    margin-top: -30px;
+}
+/* --------------------------------------main3-------------------------- */
+.main_3{
+    background-color: aqua;
+    grid-area: main_3;
+    /* margin-right: 10px; */
+}
+.main3_head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+.button{
+    background-color: white;
+    padding: 8px;
+    margin-right: 15px;
+    border-radius: 20px;
+}
+.button button{
+    padding: 7px;
+    border: none;
+    border-radius: 20px;
+}
+.big_collector{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    
+}
+.collector{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: white; */
+    margin:0 10px;
+    /* padding: 5px 0; */
+    border-radius: 20px;
+}
+.left{
+    display: flex;
+    align-items: center;
+
+}
+.left img{
+    border-radius: 50%;
+}
+.right{
+    margin-left: 30px;
+}
+.info_left p:nth-child(odd),
+.right p:nth-child(odd){
+    margin-bottom: -10px;
+}
+.main_4{
+    background-color:aqua;
+    grid-area: main_4;
+}
+strong{
+    color: darkorange;
+}
+/* --------------------------------navigation----------------------------- */
+.navigation{
+    /* background-color: blue; */
+}
+.nav_head{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.nav_head p{
+    margin-top: -10px;
+}
+.nav_head h3{
+    color: deeppink;
+}
+.info_nav{
+    margin-left: 10px;
+}
+.nav_main1{
+    margin-left: 20px;
+}
+.group_button{
+    margin-bottom: 20px;
+}
+.group_button button:hover{
+    color: blue;
+}
+.group_button button{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+}
+.group_button i{
+    margin-right: 10px;
+}
+.people{
+    margin-left: 20px;
+}
+.others{
+    margin-left: 20px;
+}
+.others .group_button:nth-child(odd){
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.footer{
+    position: relative;
+}
+/* -------------------------------main4--------------------------- */
+.main_4{
+    margin-top: 20px;
+}
+.balance{
+    margin: 0 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.sub_balance{
+    margin: 0 10px;
+}
+.balance1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 0 10px; */
+}
+.balance h3{
+    margin-top: -10px;
+    font-size: 25px;
+}.balance button{
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    color: blue;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.trending{
+    /* background-color: white; */
+    margin: 50px 10px;
+}
+.trending_head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 204, 255, 0.342);
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.trending_head button{
+    border: none;
+    background: none;
+    color: blue;
+}
+.big_project{
+    background-color: white;
+    border-radius: 10px;
+}
+.project{
+    display: flex;
+    align-items: center;
+    /* background-color: white; */
+    /* margin: 0 px; */
+
+}
+.project_atoma{
+    display: flex;
+    align-items: center;
+}
+.info_project{
+    margin-left: 10px;
+}
+.price{
+    margin-left: 30px;
+}
+.project h5{
+    margin-bottom: -5px;
+}
+.project_atoma img{
+    border-radius: 50%;
+}
+.Green_Onion{
+    background-color: white;
+    margin: 45px 10px;
+    border-radius: 10px;
+}
+.green_head{
+    display: flex;
+    align-items: center;
+}
+.info_green{
+    margin-left: 10px;
+}
+.green_head h5{
+    margin-bottom: -10px;
+}
+.green_head img{
+    border-radius: 50%;
+}
+.big_info{
+    display: flex;
+}
+.info_card{
+    background-color: rgb(190, 182, 182);
+    margin: 0 10px;
+    border-radius: 10px;
+}
+.card_onion{
+    background-color: white;
+    margin: 5px;
+    align-items: center;
+    border-radius: 10px;
+}
+.img_onion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img_onion img{
+    border-radius: 10px;
+    margin: 5px;
+}
+.info_onion{
+    margin-top: -10px;
+}
+.info_onion p{
+    margin-top: -15px;
+
+}
